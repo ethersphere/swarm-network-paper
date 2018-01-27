@@ -1,0 +1,58 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{csquotes}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{lscape}
+\usetikzlibrary{arrows, arrows.meta, fit,positioning,shapes,automata}
+\usepackage{fancyhdr}
+\usepackage[titletoc,title]{appendix}
+\usepackage[hidelinks]{hyperref}%
+\usepackage[section,numberedsection, acronym, toc]{glossaries}
+%\newacronym{grant}{GRANT}{Global Resource Allocation via Network Topology}
+\makeglossaries
+\bibliographystyle{apalike}
+
+\input{glossary.tex}
+
+\newcommand\gloss[1]{\emph{\gls{#1}}}
+
+
+\title{Decentralised peer-to-peer network for route}
+% \subtitle{Scalable infrastructure for decentralised service economies}
+\author{Viktor Trón, Aron Fischer, Daniel A. Nagy}
+\date{\today}
+\begin{document}
+
+
+\maketitle
+% \begin{abstract}
+% \end{abstract}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\include{body.tex}
+
+\cite{ethersphere2016sw3}
+\cite{ethersphere2016smash}
+\cite{maymounkov2002kademlia}
+\cite{heep2010r}
+\cite{malavolta2017concurrency}
+\cite{chiesa2017decentralized}
+\cite{heilman2016tumblebit}
+\cite{green2016bolt}
+\cite{miller2017sprites}
+\cite{mcdonald2017payment}
+\cite{diferrante2017payment}
+
+\bibliography{./refs.bib}
+% \appendix
+% \section{}
+\printglossary
+
+\end{document}
