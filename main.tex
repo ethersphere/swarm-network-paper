@@ -21,10 +21,10 @@
 \input{glossary.tex}
 
 \newcommand\gloss[1]{\emph{\gls{#1}}}
+\newcommand\xor{\large{}\hat{}{}}
 
-
-\title{Decentralised peer-to-peer network for route}
-% \subtitle{Scalable infrastructure for decentralised service economies}
+\title{Swarm: a decentralised peer-to-peer network for messaging and storage}
+% \subtitle{the network layer of the ethereum swarm}
 \author{Viktor Trón, Aron Fischer, Daniel A. Nagy}
 \date{\today}
 \begin{document}
@@ -34,9 +34,9 @@
 % \begin{abstract}
 % \end{abstract}
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 \tableofcontents
-\include{body.tex}
+\input{body.tex}
 
 \cite{ethersphere2016sw3}
 \cite{ethersphere2016smash}
@@ -51,7 +51,7 @@
 \cite{diferrante2017payment}
 
 \bibliography{./refs.bib}
-% \appendix
+\appendix
 % \section{}
 \printglossary
 
